@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-04-12T01:27:36.748663+00:00",
+  "items": [
+    {
+      "id": "cur_001",
+      "title": "Current Focus",
+      "content": "Currently building a personal digital twin MVP, focused on response quality, layered memory, freshness-aware retrieval, and grounded answering.",
+      "tags": [
+        "current_focus",
+        "digital_twin"
+      ],
+      "importance": 0.95,
+      "promotion_candidate": true,
+      "expires_in_days": 10
+    },
+    {
+      "id": "cur_002",
+      "title": "Current Role Search",
+      "content": "Actively targeting AI Engineer and ML Engineer roles, especially positions with strong product scope, deployment depth, and room for end-to-end ownership.",
+      "tags": [
+        "job_search",
+        "roles"
+      ],
+      "importance": 0.85,
+      "promotion_candidate": false,
+      "expires_in_days": 30
+    }
+  ]
+}

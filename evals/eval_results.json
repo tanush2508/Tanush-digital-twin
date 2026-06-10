@@ -1,0 +1,360 @@
+{
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "pass_rate": 100.0,
+    "by_category": {
+      "identity_recall": {
+        "total": 3,
+        "passed": 3
+      },
+      "project_synthesis": {
+        "total": 3,
+        "passed": 3
+      },
+      "current_state": {
+        "total": 3,
+        "passed": 3
+      },
+      "historical": {
+        "total": 2,
+        "passed": 2
+      },
+      "unsupported": {
+        "total": 2,
+        "passed": 2
+      },
+      "tone": {
+        "total": 1,
+        "passed": 1
+      },
+      "temporal_correctness": {
+        "total": 1,
+        "passed": 1
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "eval_001",
+      "category": "identity_recall",
+      "question": "What roles are you targeting?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "I'm targeting: AI Engineer, ML Engineer, Data Scientist, and Software Engineer.\n\nI prefer roles that let me work across modeling, deployment, and product impact\u2014especially in AI products, production ML systems, agentic systems, and applications where reliability and end-to-end deployment matter.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_002",
+      "category": "identity_recall",
+      "question": "What are your technical strengths?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "My technical strengths include:\n\n- Building end-to-end AI systems that go beyond modeling to deployment, reliability, and user impact.  \n- Working with LLMs and agentic systems (designing structured agent behavior and evaluation).  \n- Computer vision and production ML systems engineering.  \n- Designing low-latency, real-time interaction systems and orchestration (e.g., multi-agent voice roleplay).  \n- Bridging experimentation and practical system design\u2014moving prototypes into reliable production.  \n- Explaining technical ideas clearly and supporting teaching/research translation.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_003",
+      "category": "project_synthesis",
+      "question": "Tell me about RepaintWiz",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "RepaintWiz is an AI-powered paint-visualization product that lets users preview paint colors in interior spaces before purchase. The system emphasizes realism\u2014modeling lighting, wall texture, shadows, and preserving room geometry.\n\nTechnically, I built deployment-ready infrastructure around the modeling workflow: a queued GPU inference system using FastAPI, Redis, RQ, and Runpod so it could handle real usage rather than just being an offline demo.\n\nWhy it matters to me: it combined computer vision, deployment, product thinking, and customer validation. It wasn\u2019t just training models\u2014it was building a real AI product that could be used and evaluated in practice.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_004",
+      "category": "project_synthesis",
+      "question": "What project best shows your production AI engineering skills?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.9,
+      "answer": "RepaintWiz. It\u2019s the clearest production-focused example: I built deployment-ready infrastructure around the modeling workflow (a queued GPU inference system using FastAPI, Redis, RQ, and Runpod) so the system could handle real usage rather than just an offline demo. The project combined computer vision, deployment, product thinking, and customer validation\u2014exactly the production ML engineering skills I focus on.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_005",
+      "category": "project_synthesis",
+      "question": "What project best shows your systems and orchestration experience?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.92,
+      "answer": "Voice Lab. I built a real-time, voice-based roleplay system with multiple scenario agents and a debrief agent \u2014 the work centered on orchestration, evaluation, structured agent behavior, and low-latency interaction design. \n\n(For deployment-focused systems work, RepaintWiz also shows building production infrastructure \u2014 a queued GPU inference stack using FastAPI, Redis, RQ, and Runpod.)",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_006",
+      "category": "current_state",
+      "question": "What are you focused on right now?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "current",
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "Right now I'm building a digital-twin MVP \u2014 focusing on response quality, layered memory, freshness\u2011aware retrieval, and grounded answering. I'm also actively targeting AI Engineer / ML Engineer roles that offer product scope, deployment depth, and end\u2011to\u2011end ownership.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_007",
+      "category": "current_state",
+      "question": "What kind of roles are you actively targeting right now?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "current",
+        "long_term"
+      ],
+      "confidence": 0.92,
+      "answer": "Right now I'm actively targeting AI Engineer and ML Engineer roles \u2014 ideally positions with strong product scope, deep deployment work, and room for end-to-end ownership. I prefer opportunities that let me work across modeling, deployment, and product impact (production ML, LLMs/agents, reliability-focused systems), often in startup-style, high-ownership environments.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_008",
+      "category": "historical",
+      "question": "What were you working on recently?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "archive",
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "Recently I spent time preparing for startup-style AI engineering interviews focused on production systems and product-minded engineering.\n\nI\u2019ve also been working on a few projects:\n- RepaintWiz \u2014 an AI paint-visualization product (focus on realism) where I built deployment-ready infra, including a queued GPU inference system using FastAPI, Redis, RQ, and Runpod.\n- Voice Lab \u2014 a real-time voice-based roleplay system with multiple scenario agents and a debrief agent, emphasizing orchestration, low latency, and structured agent behavior.\n- Teaching and research at Cornell, bridging experimentation with practical system design.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_009",
+      "category": "historical",
+      "question": "What had you been preparing for earlier?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "archive",
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "I\u2019d been preparing for startup-style AI engineering interviews\u2014specifically ones focused on production systems and product-minded engineering.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_010",
+      "category": "unsupported",
+      "question": "What is your favorite sports team?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "soften",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "There isn\u2019t enough grounded information in my current data to answer that.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_011",
+      "category": "unsupported",
+      "question": "What are your political views?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "soften",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.9,
+      "answer": "There isn\u2019t enough grounded information in my current data to answer that.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_012",
+      "category": "tone",
+      "question": "Explain your background in a way that sounds natural and direct.",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.94,
+      "answer": "I\u2019m an AI engineer (MPS in Information Science from Cornell) who works across teaching, research support, and applied engineering. I focus on LLMs, computer vision, production ML systems, agents, and deployment, and I prefer roles where I can own end-to-end work \u2014 modeling, infra, and product impact. Practically, I built a real\u2011time voice roleplay system that emphasized orchestration, low latency, structured agent behavior, and evaluation, and an AI paint\u2011visualization product (RepaintWiz) where I shipped deployment-ready infrastructure \u2014 a queued GPU inference stack using FastAPI, Redis, RQ, and Runpod. I enjoy explaining technical ideas clearly and bridging experimentation with practical system design.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_013",
+      "category": "temporal_correctness",
+      "question": "What are you focused on now, and how does that connect to your broader engineering interests?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "current",
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "Right now I\u2019m building a digital-twin MVP, focused on response quality, layered memory, freshness-aware retrieval, and grounded answering. I\u2019m also actively targeting AI/ML engineer roles that offer strong product scope, deployment depth, and room for end-to-end ownership.\n\nThis connects directly to my broader interests in LLMs, production ML systems, agents, and deployment: I prefer working across modeling, deployment, and product impact, valuing reliability and real-world usefulness as much as raw model performance. I enjoy startup-style, end-to-end work where I can bridge experimentation and practical system design.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_014",
+      "category": "current_state",
+      "question": "What are you actively building this week?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "current",
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "Right now I'm building a digital twin MVP \u2014 focused on improving response quality with layered memory, freshness-aware retrieval, and grounded answering.",
+      "num_sources": 6
+    },
+    {
+      "id": "eval_015",
+      "category": "identity_recall",
+      "question": "What kind of work environment do you prefer?",
+      "passed": true,
+      "checks": {
+        "has_answer": true,
+        "has_sources": true,
+        "expected_action_match": true,
+        "expected_layers_overlap": true,
+        "must_include_any_match": true,
+        "must_not_include_any_match": true
+      },
+      "policy_action": "accept",
+      "debug_layers": [
+        "long_term"
+      ],
+      "confidence": 0.95,
+      "answer": "I prefer startup-style environments where I can own end-to-end systems and move quickly \u2014 fast iteration, clear ownership, and product impact matter to me. I like roles that span modeling, deployment, and product (production ML, agentic systems, AI products) so I can bridge experimentation and practical system design. Environments that value reliability and real-world usability as much as raw model performance are a particularly good fit.",
+      "num_sources": 6
+    }
+  ]
+}

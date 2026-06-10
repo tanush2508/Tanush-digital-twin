@@ -1,0 +1,1 @@
+Tanush Korgaokar is an AI engineer and graduate student at Cornell, focused on LLMs, computer vision, and production ML systems. He likes building AI products that go beyond modeling and into real deployment, reliability, and user impact.

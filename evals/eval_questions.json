@@ -1,0 +1,137 @@
+[
+    {
+      "id": "eval_001",
+      "category": "identity_recall",
+      "question": "What roles are you targeting?",
+      "expected_action": "accept",
+      "expected_layers": ["long_term", "current"],
+      "must_include_any": ["AI Engineer", "ML Engineer", "roles"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_002",
+      "category": "identity_recall",
+      "question": "What are your technical strengths?",
+      "expected_action": "accept",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["LLMs", "computer vision", "production", "deployment", "agents"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_003",
+      "category": "project_synthesis",
+      "question": "Tell me about RepaintWiz",
+      "expected_action": "accept",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["RepaintWiz", "paint", "FastAPI", "Redis", "Runpod", "deployment"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_004",
+      "category": "project_synthesis",
+      "question": "What project best shows your production AI engineering skills?",
+      "expected_action": "accept",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["RepaintWiz", "FastAPI", "Redis", "RQ", "Runpod"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_005",
+      "category": "project_synthesis",
+      "question": "What project best shows your systems and orchestration experience?",
+      "expected_action": "accept",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["Voice Lab", "orchestration", "real-time", "agents"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_006",
+      "category": "current_state",
+      "question": "What are you focused on right now?",
+      "expected_action": "accept",
+      "expected_layers": ["current", "long_term"],
+      "must_include_any": ["digital twin", "response quality", "layered memory"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_007",
+      "category": "current_state",
+      "question": "What kind of roles are you actively targeting right now?",
+      "expected_action": "accept",
+      "expected_layers": ["current", "long_term"],
+      "must_include_any": ["AI Engineer", "ML Engineer"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_008",
+      "category": "historical",
+      "question": "What were you working on recently?",
+      "expected_action": "accept",
+      "expected_layers": ["archive", "current", "long_term"],
+      "must_include_any": ["recently", "interview", "startup-style", "production systems"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_009",
+      "category": "historical",
+      "question": "What had you been preparing for earlier?",
+      "expected_action": "accept",
+      "expected_layers": ["archive"],
+      "must_include_any": ["interview", "production systems", "product-minded engineering"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_010",
+      "category": "unsupported",
+      "question": "What is your favorite sports team?",
+      "expected_action": "soften",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["not enough", "no information", "available information", "current data"],
+      "must_not_include_any": ["Yankees", "Lakers", "Warriors", "favorite team is"]
+    },
+    {
+      "id": "eval_011",
+      "category": "unsupported",
+      "question": "What are your political views?",
+      "expected_action": "soften",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["not enough", "no information", "available information", "current data"],
+      "must_not_include_any": ["I support", "I believe politically", "my political views"]
+    },
+    {
+      "id": "eval_012",
+      "category": "tone",
+      "question": "Explain your background in a way that sounds natural and direct.",
+      "expected_action": "accept",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["Cornell", "AI engineer"],
+      "must_not_include_any": ["As an AI language model"]
+    },
+    {
+      "id": "eval_013",
+      "category": "temporal_correctness",
+      "question": "What are you focused on now, and how does that connect to your broader engineering interests?",
+      "expected_action": "accept",
+      "expected_layers": ["current", "long_term"],
+      "must_include_any": ["right now", "currently", "digital twin", "production", "deployment", "agents"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_014",
+      "category": "current_state",
+      "question": "What are you actively building this week?",
+      "expected_action": "accept",
+      "expected_layers": ["current"],
+      "must_include_any": ["digital twin"],
+      "must_not_include_any": []
+    },
+    {
+      "id": "eval_015",
+      "category": "identity_recall",
+      "question": "What kind of work environment do you prefer?",
+      "expected_action": "accept",
+      "expected_layers": ["long_term"],
+      "must_include_any": ["startup", "ownership", "fast iteration", "end-to-end"],
+      "must_not_include_any": []
+    }
+  ]
